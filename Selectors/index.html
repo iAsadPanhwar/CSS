@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+
+        .box::first-line{
+            color: yellow;
+        } */
+         /* .boxes *{
+            color: red;
+            border: 2px solid black;
+         }
+         [data-color="primary"]{
+            margin-top: 25px;
+         } */
+
+        /* .box:nth-child(even){
+            background-color: aqua;
+        } */
+        /* .box:nth-last-child(1){
+            background-color: aqua;
+        } */
+
+        .boxes::before{
+            content: "Asad is Good";
+        }
+        .boxes::after{
+            content: "Asad is Good";
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        input::placeholder{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">I am another box</div>
+        <div class="box">I am also another box</div>
+        <input type="text" placeholder="Enter your text">
+    </div>
+</body>
+</html>
